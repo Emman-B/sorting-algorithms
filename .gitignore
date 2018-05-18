@@ -1,5 +1,5 @@
 # filetypes
-.class
+*.class
 
 # ignore tester file
 TesterClass.java
