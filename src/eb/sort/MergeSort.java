@@ -1,5 +1,7 @@
 package eb.sort;
 
+import eb.tools.*;
+
 public class MergeSort {
 	private MergeSort() {
 		//prevents instantiation

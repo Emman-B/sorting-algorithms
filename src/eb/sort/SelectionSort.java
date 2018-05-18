@@ -1,5 +1,7 @@
 package eb.sort;
 
+import eb.tools.*;
+
 public class SelectionSort {
 	private SelectionSort() {
 		//prevents instantiation
@@ -17,15 +19,9 @@ public class SelectionSort {
 
 				//last item only
 				if (compare == array.length - 1) {
-					swap(array, i, minIndex);
+					ArrayToolkit.swap(array, i, minIndex);
 				}
 			}
 		}
-	}
-	//====================================================================================================//
-	private static void swap (Comparable[] array, int firstIndex, int secondIndex) { //helper function
-		Comparable temp = array[firstIndex];
-		array[firstIndex] = array[secondIndex];
-		array[secondIndex] = temp;
 	}
 }
